@@ -42,7 +42,7 @@ export default function Home() {
         opts={{
           align: "start",
         }}
-        className="w-[95vw]"
+        className="w-[95vw] py-[1rem]"
       >
         <CarouselContent>
           {categorys.map((category) => {
@@ -66,7 +66,7 @@ export default function Home() {
       </Carousel>
 
       {category.length > 0 && (
-        <div className="grid grid-cols-1 lg:grid-cols-3 pt-[5rem] md:grid-cols-2 place-items-center gap-y-[5rem]">
+        <div className="grid grid-cols-1 lg:grid-cols-3 pt-[5rem] md:grid-cols-2 place-items-center gap-y-[6rem] md:gap-y-[7rem]">
           {category.map((el) => {
             return <FoodTypeCategory key={el.id} />;
           })}
